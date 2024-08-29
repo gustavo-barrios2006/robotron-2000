@@ -1,6 +1,6 @@
 document.querySelectorAll(".controle-ajuste").forEach(element=>{
     element.addEventListener("click", event=>{
-        manipulaDados(event.target.textContent=='+'?"somar":"subtrair", event.target.parentNode.querySelector(".controle-contador"));
+        manipulaDados(event.target.dataset.controle=='+'?"somar":"subtrair", event.target.parentNode.querySelector("[data-contador]"));
     });
 });
 function manipulaDados(operacao, campo)
