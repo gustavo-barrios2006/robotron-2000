@@ -60,3 +60,7 @@ element.textContent=parseInt(element.textContent)+pecas[peca][element.dataset.es
     }
 });
 }
+function trocaImagem(cor)
+{
+    document.querySelector(".robo").src=`./img/Robotron 2000 - ${cor}.png`;
+}
